@@ -204,14 +204,12 @@
 
 .modal {
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(0, 0);
 	z-index: 10;
 	min-width: 341px;
-	max-width: 353px;
+	max-width: 357px;
 	border: 2px solid currentColor;
-	padding: 27px 42px;
+	padding: 30px 42px;
 	background-color: var(--content-background);
 }
 
@@ -279,6 +277,9 @@
 }
 
 @media (min-width: 1440px) {
+	.modal {
+		padding: 30px;
+	}
 	.modal-div__button {
 		flex-direction: row;
 		justify-content: center;
